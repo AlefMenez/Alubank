@@ -22,7 +22,7 @@ class AccountPoints extends StatelessWidget {
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
-          BoxCard(boxContent: _AccountPointsContent())
+          const BoxCard(boxContent: _AccountPointsContent())
         ],
       ),
     );
@@ -38,16 +38,16 @@ class _AccountPointsContent extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8.0),
+        const Padding(
+          padding:  EdgeInsets.only(bottom: 8.0),
           child: Text('Pontos totais:'),
         ),
         Text(
           '3000',
           style: Theme.of(context).textTheme.bodyLarge,
         ),
-        Padding(
-          padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+        const Padding(
+          padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
           child: ContentDivision(),
         ),
         Text(
@@ -60,9 +60,9 @@ class _AccountPointsContent extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 4.0),
-                child: ColorDot(color: ThemeColors.AccountPoints['delivery']),
+                child: ColorDot(color: ThemeColors.accountPoints['delivery']),
               ),
-              Text('Entrega grátis: 15000pts'),
+              const Text('Entrega grátis: 15000pts'),
             ],
           ),
         ),
@@ -70,9 +70,9 @@ class _AccountPointsContent extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 4.0),
-                child: ColorDot(color: ThemeColors.AccountPoints['streaming']),
+                child: ColorDot(color: ThemeColors.accountPoints['streaming']),
               ),
-              Text('1 mês de streaming: 30000pts'),
+              const Text('1 mês de streaming: 30000pts'),
             ],
           ),
       ],

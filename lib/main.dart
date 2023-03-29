@@ -3,7 +3,7 @@ import 'package:alubank/theme/my_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp( Alubank());
+  runApp( const Alubank());
 }
 
 class Alubank extends StatelessWidget {
@@ -13,8 +13,8 @@ class Alubank extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Alubank',
-      theme: MyTheme,
-      home: HomeScreen(),
+      theme: myTheme,
+      home: const HomeScreen(),
     );
   }
 }
